@@ -1,0 +1,18 @@
+;this file is for checking all the errors regarding invalid operands, labels and so on.;this file is for checking all the errors regarding invalid operands, labels and
+;invalid macro name:
+
+    ;invalid data type:
+    .data abc
+
+;invalid label name:
+    @r1:
+
+;invalid operand:
+    mov @2, @r1
+mov @r9, @r3
+    mov +a, @r1
+mov -b, @r2
+mov cmp, @r2
+mov 42av, @r2
+
+

@@ -1,0 +1,15 @@
+;this file is for checking all the errors regarding missing operands, labels and so on.
+;missing label
+    .entry
+    .extern
+
+;missing comma
+mov @r1 @r5
+    .data 5 6
+    .extern w x
+
+;missing operand
+prn
+sub 4
+cmp @r1 ,
+.data 6,
